@@ -212,5 +212,5 @@ exec --no-startup-id pactl set-sink-volume 85%
 for_window [class="^.*"] border pixel 3
 exec --no-startup-id compton
 exec --no-startup-id mopidy
-exec --no-nostartup-id yabar
+exec yabar
 gaps inner 10
