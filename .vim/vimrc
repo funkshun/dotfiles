@@ -1,0 +1,26 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+:set tw=80
+:set fo+=t
+:set number
+"autocmd FileType java setlocal omnifunc=javacomplete#Complete
+"set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+"" set laststatus=2
+"
+" " Use 256 colours (Use this setting only if your terminal supports 256
+" colours)
+:set t_Co=256
+:set tabstop=2 
+:set nocompatible
+ :filetype
+ filetype plugin indent on
+ let g:indentLine_color_term = 222
+ let g:indentLine_color_gui = '#222222'
+ let g:indentLine_char = '|'
+ 
+ "autocmd vimenter * NERDTree 
+ map <C-n> :NERDTreeToggle<CR>
