@@ -1,48 +1,303 @@
- ! -----------------------------------------------------------------------------
- ! File: gruvbox-dark.xresources
- ! Description: Retro groove colorscheme generalized
- ! Author: morhetz <morhetz@gmail.com>
- ! Source: https://github.com/morhetz/gruvbox-generalized
- ! Last Modified: 6 Sep 2014
- ! -----------------------------------------------------------------------------
+!-------XRESOURCES--------
 
- ! hard contrast: *background: #1d2021
- *background: #282828
- ! soft contrast: *background: #32302f
- *foreground: #ebdbb2
- ! Black + DarkGrey
- *color0:  #282828
- *color8:  #928374
- ! DarkRed + Red
- *color1:  #cc241d
- *color9:  #fb4934
- ! DarkGreen + Green
- *color2:  #98971a
- *color10: #b8bb26
- ! DarkYellow + Yellow
- *color3:  #d79921
- *color11: #fabd2f
- ! DarkBlue + Blue
- *color4:  #458588
- *color12: #83a598
- ! DarkMagenta + Magenta
- *color5:  #b16286
- *color13: #d3869b
- ! DarkCyan + Cyan
- *color6:  #689d6a
- *color14: #8ec07c
- ! LightGrey + White
- *color7:  #a89984
- *color15: #ebdbb2
 
- !--------------------------------------------------------------------------------
- !urxvt
- !Set scrollbar on or off
-  URxvt*scrollBar: false
- !Fake Transparency
- URxvt*transparent: true
- URxvt*shading: 40
- !RealTransparency
- !URxvt*depth: 32
- !URxvt*background: rgba:
- URxvt*font: xft: Anonymice\ Powerline:size=10 
+!!! URXVT !!!
+xft.dpi: 192
+URxvt.font: xft:Fira Code:size=8
+URxvt.scrollBar: false
+URxvt.internalBorder: 50
+
+!Main Color Definitions
+#define BG #1d2030
+#define FG #7ea2b4
+
+!!! ROFI !!!
+rofi.font: mono 20
+rofi.color-normal:  BG,FG,BG,FG,BG
+! "Color scheme for urgent row" Set from: Default
+rofi.color-urgent: BG,#dc322f,#eee8d5,#dc322f,BG
+! "Color scheme for active row" Set from: Default
+rofi.color-active: BG,#268bd2,#eee8d5,#268bd2,BG
+! "Color scheme window" Set from: Default
+rofi.color-window: BG,BG
+
+!!! Color Scheme !!!
+!For Nier Theme
+!! special
+!*.foreground:   #56513c
+!*.background:   #fdf6e3
+!*.cursorColor:  #56513c
+!
+!! black
+!*.color0:       #282a2e
+!*.color8:       #373b41
+!
+!! red
+!*.color1:       #a54242
+!*.color9:       #cc6666
+!
+!! green
+!*.color2:       #8c9440
+!*.color10:      #b5bd68
+!
+!! yellow
+!*.color3:       #de935f
+!*.color11:      #f0c674
+!
+!! blue
+!*.color4:       #5f819d
+!*.color12:      #81a2be
+!
+!! magenta
+!*.color5:       #85678f
+!*.color13:      #b294bb
+!
+!! cyan
+!*.color6:       #5e8d87
+!*.color14:      #8abeb7
+!
+!! white
+!*.color7:       #707880
+!*.color15:      #c5c8c6
+
+! special
+!*.foreground:   FG
+!*.background:   BG
+!*.cursorColor:  FG
+!
+!!! black
+!*.color0:       #3d3d3d
+!*.color8:       #4d4d4d
+!!
+!!! red
+!*.color1:       #6673bf
+!*.color9:       #899aff
+!!
+!!! green
+!*.color2:       #3ea290
+!*.color10:      #52ad91
+!!
+!!! yellow
+!*.color3:       #b0ead9
+!*.color11:      #98c9bb
+!!
+!!! blue
+!*.color4:       #31658c
+!*.color12:      #477ab3
+!!
+!!! magenta
+!*.color5:       #596196
+!*.color13:      #7882bf
+!!
+!!! cyan
+!*.color6:       #8292b2
+!*.color14:      #95a7cc
+!!
+!! white
+!*.color7:       #c8cacc
+!*.color15:      #edeff2
+!
+! Base16 Grayscale Dark
+! Scheme: Alexandre Gavioli (https://github.com/Alexx2/)
+
+!#define base00 #101010
+!#define base01 #252525
+!#define base02 #464646
+!#define base03 #525252
+!#define base04 #ababab
+!#define base05 #b9b9b9
+!#define base06 #e3e3e3
+!#define base07 #f7f7f7
+!#define base08 #7c7c7c
+!#define base09 #999999
+!#define base0A #a0a0a0
+!#define base0B #8e8e8e
+!#define base0C #868686
+!#define base0D #686868
+!#define base0E #747474
+!#define base0F #5e5e5e
+
+!*.color0:       base00
+!*.color1:       base08
+!*.color2:       base0B
+!*.color3:       base0A
+!*.color4:       base0D
+!*.color5:       base0E
+!*.color6:       base0C
+!*.color7:       base05
+!
+!*.color8:       base03
+!*.color9:       base09
+!*.color10:      base01
+!*.color11:      base02
+!*.color12:      base04
+!*.color13:      base06
+!*.color14:      base0F
+!*.color15:      base07
+!*.color0:	#1C122C
+!*.color1:	#D49076
+!*.color10:	#3D509A
+!*.color11:	#BB718F
+!*.color12:	#5AA0D5
+!*.color13:	#DDA097
+!*.color14:	#C7BAC0
+!*.color15:	#E8E1E7
+!*.color2:	#3D509A
+!*.color3:	#BB718F
+!*.color4:	#5AA0D5
+!*.color5:	#DDA097
+!*.color6:	#C7BAC0
+!*.color7:	#E8E1E7
+!*.color8:	#666666
+!*.color9:	#D49076
+!*.background: #1C122C
+!*.foreground: #E8E1E7
+
+!special
+!*.foreground:   #e0f2ec
+!*.background:   #11292E
+!*.cursorColor:  #e0f2ec
+!
+!! black
+!*.color0:       #0e1f22
+!*.color8:       #1c4b4e
+!
+!! red
+!*.color1:       #a85659
+!*.color9:       #eb8995
+!
+!! green
+!*.color2:       #668e8c
+!*.color10:      #82aea9
+!
+!! yellow
+!*.color3:       #c3b6a4
+!*.color11:      #e1d9ce
+!
+!! blue
+!*.color4:       #326d78
+!*.color12:      #a7d2cd
+!
+!! magenta (or orange)
+!*.color5:       #433c32
+!*.color13:      #aa9576
+!
+!! cyan
+!*.color6:       #386e74
+!*.color14:      #90c0bd
+!
+!! white
+!*.color7:       #e0f2ec
+!*.color15:      #f0f8f3
+
+!!Solarized Light
+!! special
+!*.foreground:   #586e75
+!*.background:   #fdf6e3
+!*.cursorColor:  #586e75
+!!
+!!! black
+!*.color0:       #002b36
+!*.color8:       #657b83
+!!
+!!! red
+!*.color1:       #dc322f
+!*.color9:       #dc322f
+!!
+!!! green
+!*.color2:       #859900
+!*.color10:      #859900
+!!
+!!! yellow
+!*.color3:       #b58900
+!*.color11:      #b58900
+!!
+!!! blue
+!*.color4:       #268bd2
+!*.color12:      #268bd2
+!!
+!!! magenta
+!*.color5:       #6c71c4
+!*.color13:      #6c71c4
+!!
+!!! cyan
+!*.color6:       #2aa198
+!*.color14:      #2aa198
+!!
+!! white
+!*.color7:       #93a1a1
+!*.color15:      #fdf6e3
+!!
+! special
+!*.foreground:   #c7ccd1
+!*.background:   #1c2023
+!*.cursorColor:  #c7ccd1
+
+!! black
+!*.color0:       #1c2023
+!*.color8:       #747c84
+!
+!! red
+!*.color1:       #c7ae95
+!*.color9:       #c7ae95
+!
+!! green
+!*.color2:       #95c7ae
+!*.color10:      #95c7ae
+!
+!! yellow
+!*.color3:       #aec795
+!*.color11:      #aec795
+!
+!! blue
+!*.color4:       #ae95c7
+!*.color12:      #ae95c7
+!
+!! magenta
+!*.color5:       #c795ae
+!*.color13:      #c795ae
+!
+!! cyan
+!*.color6:       #95aec7
+!*.color14:      #95aec7
+!
+!! white
+!*.color7:       #c7ccd1
+!*.color15:      #f3f4f5
+!
+! special
+*.foreground:   #7ea2b4
+*.background:   #1d2030
+*.cursorColor:  #7ea2b4
+
+! black
+*.color0:       #161b1d
+*.color8:       #5a7b8c
+
+! red
+*.color1:       #d22d72
+*.color9:       #d22d72
+
+! green
+*.color2:       #568c3b
+*.color10:      #568c3b
+
+! yellow
+*.color3:       #8a8a0f
+*.color11:      #8a8a0f
+
+! blue
+*.color4:       #257fad
+*.color12:      #257fad
+
+! magenta
+*.color5:       #5d5db1
+*.color13:      #5d5db1
+
+! cyan
+*.color6:       #2d8f6f
+*.color14:      #2d8f6f
+
+! white
+*.color7:       #7ea2b4
+*.color15:      #ebf8ff
